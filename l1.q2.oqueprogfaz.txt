@@ -1,0 +1,6 @@
+1- É carregada a biblioteca "stdio.h";
+2- Inicia a função principal main;
+3- É criada a variável "x" do tipo inteiro;
+4- O programa aguarda que o usuário digite um valor do tipo inteiro e o programa salva esse valor na variável "x";
+5- O programa imprime a variável "x" na tela;
+6- O programa retorna o valor "0" e encerra o programa.
