@@ -1,12 +1,12 @@
 #include<stdio.h>
 
-int verifica_num(int num)
+int verifica_num(int num, int *cont)
 {
 	int verifica=0,i=0;
 	char txt[7];
-	
+
 	sprintf(txt, "%d", num);
-	
+	(*cont)++;
 	
 	if(strlen(txt)%2==0) // verifica se o numero possui numero de digitos par.
 	{
@@ -25,36 +25,46 @@ int verifica_num(int num)
 	}
 	else
 		return verifica;
-			
+
 }
 
-int main()
+void multiplica ()
 {
-	int i,j,num1, num2, result, palind=0;
 	
-	for(i=9; i<100; i++) // Faz a contagem para a multiplicação do 1o. numero
+	int i,j,num1, num2, result, palind=0, cont=0;
+
+	for(i=1000; i>99; i--) // Faz a contagem para a multiplicação do 1o. numero
 	{
-		for(j=9; j<100; j++) // Faz a contagem para a multiplicação do 2o. numero
+		for(j=1000; j>99; j--) // Faz a contagem para a multiplicação do 2o. numero
 		{
-			result =0;
+			result = 0;
 			result = i*j;
-			if(verifica_num(result) == 1)
+			if(palind < result) // Verifica se o proximo palindrome achado é maior que o anterio salvo
 			{
-				if(palind < result) // Verifica se o proximo palindrome achado é maior que o anterio salvo
+				if(verifica_num(result,&cont) == 1)
 				{
+				printf("%d\n",result);
+
 					num1 = i;
 					num2 = j;
 					palind = result;
 				}
 			}	
-			
+
 		}
 	}
-	
-	printf("Maior palindrome com multiplicacao de 3 digitos: %d * %d = %d\n",num1,num2,palind);
-	
-	
+
+	printf("cont = %d || Maior palindrome com multiplicacao de 3 digitos: %d * %d = %d\n",cont,num1,num2,palind);
+	return;
+
+}
+
+
+
+int main()
+{
+
+	multiplica();
 	system("pause");
 	return 0;
 }
-
