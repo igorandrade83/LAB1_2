@@ -20,11 +20,18 @@ void fvetor(int *notas)
     return;   
 }
 
-int main()
+void recebe ()
 {
     int notas[10];
     fvetor(notas);
-    printf("média: %d", calc(notas));
+    printf("media: %d\n", calc(notas));
+
+	return;
+}
+
+int main()
+{
+	recebe();
     
     system("pause");
     return 0;

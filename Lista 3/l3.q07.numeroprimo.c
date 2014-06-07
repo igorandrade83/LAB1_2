@@ -19,10 +19,17 @@ void mult3(int *num, int *i, int *contador)
 	return;	
 }
 
-int main()
+void recebe ()
 {
 	int num,i,cont=0;
 	mult3(&num, &i, &cont);
+
+	return;
+}
+
+int main()
+{
+	recebe();
 	system("pause");
 	return 0;
 }

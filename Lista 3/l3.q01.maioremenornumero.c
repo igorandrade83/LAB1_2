@@ -5,20 +5,21 @@ O programa tem que retornar o maior e o menor número lido*/
 
 /*Trabalhando com passagem por referencia*/
 
-int main()
+
+void recebe()
 {
+	
 	int numero, maior,menor;
 	void seleciona(int *numero, int *maior, int *menor);
 
-	printf("Insira os valores:\n");
+	printf("Insira os valores (negativo finaliza):\n");
 	scanf("%d", &numero);
 	
 	maior = menor = numero;
 	seleciona(&numero, &maior, &menor);
 	printf("Maior numero: %d\nMenor numero: %d\n",maior,menor);
 	
-	system("pause");
-	return 0;
+	return;
 }
 
 void seleciona(int *numero, int *maior, int *menor)
@@ -34,3 +35,14 @@ void seleciona(int *numero, int *maior, int *menor)
 	};
 	return;
 }
+
+
+int main()
+{
+
+	recebe();
+	system("pause");
+	return 0;
+}
+
+

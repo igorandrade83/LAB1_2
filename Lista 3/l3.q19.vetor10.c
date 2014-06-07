@@ -2,10 +2,11 @@
 
 int proc_vet(int *ppvet)
 {
-	int i,j,x=-999999;
+	int i,j,x=ppvet[0];
 	
 	for(i=0;i<10;i++)
 	{
+		printf("| %d - %d |\n", i, ppvet[i]);
 		if(ppvet[i]>x)
 		{
 			x = ppvet[i];
@@ -13,6 +14,11 @@ int proc_vet(int *ppvet)
 		}
 	}
 	
+	printf("\nMaior elemento: %d\n",x);
+	for(i=0;i<10;i++)
+		if(ppvet[i]==x)
+			printf("Encontra-se na posicao: %d\n",i);
+
 	return j;
 }
 void fvetor(int *pvet)
@@ -28,11 +34,18 @@ void fvetor(int *pvet)
 	return;
 }
 
-int main()
+void recebe ()
 {
 	int vet[9];
 	fvetor(vet);
-	printf("Maior numero: %d\nposicao(0~9): %d\n",vet[proc_vet(vet)], proc_vet(vet));
+	proc_vet(vet);
+
+	return;
+}
+
+int main()
+{
+	recebe();
 	
 	system ("pause");	
 	return 0;

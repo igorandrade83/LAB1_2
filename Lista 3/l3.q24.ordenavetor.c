@@ -46,7 +46,7 @@ void preenchevetor(int *vet)
 	return;   
 }
 
-int main()
+void recebe ()
 {
     int vet[10],i;
     preenchevetor(vet);
@@ -54,7 +54,14 @@ int main()
  
     for(i=0;i<11;i++)
         printf("vetor %d: %d\n", i, vet[i]);
-    
+
+	return;
+}
+
+int main()
+{
+
+    recebe();
     system("pause");
     return 0;
 

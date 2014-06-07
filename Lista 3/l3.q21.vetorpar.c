@@ -10,7 +10,7 @@ int fvetor(int *vet)
     return cont;   
 }
 
-int main()
+void recebe ()
 {
     int i, vet[10];
     
@@ -18,7 +18,13 @@ int main()
     {
         scanf("%d",&vet[i]);         
     }
-    printf("numeros de vetores pares: %d",fvetor(vet));
+    printf("numeros de vetores pares: %d\n",fvetor(vet));
+	return;
+}
+
+int main()
+{
+	recebe();
     
     system("pause");
     return 0;

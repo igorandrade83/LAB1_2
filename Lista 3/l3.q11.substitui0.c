@@ -6,20 +6,29 @@ char *muda(int *pi, int *pcont, char *pbin)
 {
     scanf("%[^\n]s", pbin); 
     
-    for (*pi=0;*pi<strlen(pbin);(*pi)++)
+    while (*pi<strlen(pbin))
     {
-        if (pbin[*pi]=='0')
-            pbin[*pi]='1';  
+		if (pbin[*pi]=='0')
+			pbin[*pi]='1';  
+		(*pi)++;
     }
 	return pbin;	
 }
 
-int main()
+
+void recebe ()
 {
-    int i,cont=0;
+    int i=0,cont=0;
     char bin[100];
     
     printf("\nalteracao feita!\n%s.\n", muda(&i, &cont, bin));
+
+	return;
+}
+
+int main()
+{
+	recebe();
     
     system("pause");    
     return 0;

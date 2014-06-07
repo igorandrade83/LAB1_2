@@ -6,11 +6,19 @@ void conta(int *i)
 		printf("%d\n",(*i)--);
 	}
 }
-int main()
+
+void recebe ()
 {
 	int i=10;
 	conta(&i);	
 	printf("FIM!\n");
+
+	return;
+}
+
+int main()
+{
+	recebe();
 	system("pause");
 	return 0;
 }

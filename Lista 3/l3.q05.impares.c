@@ -13,10 +13,17 @@ void mult3(int *x,int *y)
 	return;	
 }
 
-int main()
+void recebe ()
 {
 	int i,j;
 	mult3(&i, &j);
+
+	return;
+}
+
+int main()
+{
+	recebe();
 	system("pause");
 	return 0;
 }

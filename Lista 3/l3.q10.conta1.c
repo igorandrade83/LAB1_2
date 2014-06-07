@@ -12,13 +12,20 @@ void calc(int *pi, int *pcont, char *pbin)
 	return;
 }
 
-int main()
+void recebe ()
 {
 	int i,cont=0;
 	char bin[100];
 	scanf("%s", &bin);
 	calc(&i, &cont, bin);
-	
+
+	return;
+}
+
+int main()
+{
+
+	recebe();
 	system("pause");    
 	return 0;
 }

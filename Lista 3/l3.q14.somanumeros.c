@@ -21,13 +21,18 @@ void calc(int *pnum, int *paux)
 	return;	
 }
 
-int main()
+void recebe ()
 {
 	int num, aux=0;
-	
 	calc(&num, &aux);
-	
-	
+
+	return;
+}
+
+int main()
+{
+
+	recebe();	
 	system("pause");
 	return 0;
 }

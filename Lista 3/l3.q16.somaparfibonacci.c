@@ -18,13 +18,19 @@ void calculo(int *aux, int *aux2, int *c, int *num)
 	return;
 }
 
-int main()
+void recebe ()
 {
 	int aux=0, aux2=1,c=0, num;
 	printf("Informe valor: ");
 	num= 4000000;
 	
 	calculo(&aux, &aux2, &c, &num);
+	return;
+}
+
+int main()
+{
+	recebe();
 	
 	system("pause");
 	return 0;

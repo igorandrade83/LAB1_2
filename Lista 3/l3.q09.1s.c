@@ -26,10 +26,18 @@ void usefor(int *pi)
 	*pi=1;
 	usewhile(pi);	
 }
-int main()
+
+void recebe ()
 {
 	int i;
 	usefor(&i);
+
+	return;
+}
+
+int main()
+{
+	recebe();
 	system("pause");    
 	return 0;
 }

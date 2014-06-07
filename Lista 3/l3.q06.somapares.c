@@ -11,11 +11,18 @@ void somapar(int *x, int *y)
 	return;	
 }
 
-int main()
+void recebe ()
 {
 	int i,j=0;
 	somapar(&i,&j);
 	printf("%d\n",j);
+
+	return;
+}
+
+int main()
+{
+	recebe();
 	system("pause");
 	return 0;
 }

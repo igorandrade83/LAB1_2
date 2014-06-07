@@ -10,7 +10,7 @@ int fvetor(int *vet)
     return cont;   
 }
 
-int main()
+void recebe ()
 {
     int i, vet[10];
     
@@ -23,7 +23,14 @@ int main()
     {
         printf("%d ",vet[i]);         
     }
-    
+
+	return;
+}
+
+int main()
+{
+
+    recebe();
     system("pause");
     return 0;
 }

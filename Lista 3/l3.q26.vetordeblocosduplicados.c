@@ -29,7 +29,7 @@ void ordena(int *A)
 	for(a=0,b=1;a<tam+1;a++,b++)
 		if(A[a] == A[b])
 		{
-			printf("\nnumeros repetidos: %d", A[a]);
+			printf("numeros repetidos: %d\n", A[a]);
 			aux++;
 		}
 	if(aux==0)	
@@ -48,8 +48,7 @@ void preenchevetor(int *pvet)
 	return;
 }
 
-
-int main()
+void recebe ()
 {
 	int A[tam],finaliza=-1,recursivo=0;
 	
@@ -60,7 +59,12 @@ int main()
 
 	//calc(A,&finaliza,&recursivo);
 
-	
+	return;
+}
+
+int main()
+{
+	recebe();
 	system("pause");
 	return 0;
 

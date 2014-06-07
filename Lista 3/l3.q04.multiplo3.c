@@ -9,10 +9,18 @@ void mult3(int *pi)
 	return;	
 }
 
-int main()
+void recebe ()
 {
 	int i;
 	mult3(&i);
+
+	return;
+}
+
+
+int main()
+{
+	recebe ();
 	system("pause");
 	return 0;
 }

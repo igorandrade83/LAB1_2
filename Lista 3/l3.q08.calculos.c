@@ -22,6 +22,7 @@ void calc(int *pnum, int *pa, int *pcont, int *pmaior, int *pmenor, int *pcontpa
 	
 	while(*pnum!=0)
 	{
+		printf("informe valor: ");
 		scanf("%d", &*pnum);	
 		*pa=*pa+*pnum;
 		(*pcont)++;
@@ -40,11 +41,17 @@ void calc(int *pnum, int *pa, int *pcont, int *pmaior, int *pmenor, int *pcontpa
 	imprimi(pa, pcont, pmaior, pmenor, pcontpar, ppar);
 }
 
-
-int main()
+void recebe ()
 {
 	int num=-1,a=0,cont=0,maior=-99999,menor=99999,contpar=0,par=0;
 	calc(&num,&a,&cont,&maior,&menor,&contpar,&par);
+
+	return;
+}
+
+int main()
+{
+	recebe();
 	system("pause");
 	return 0;
 }

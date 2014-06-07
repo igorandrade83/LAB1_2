@@ -63,8 +63,7 @@ int fvetor(int *vet, int *pcont) //preenche a tabela 1
 	return 0;	
 }
 
-
-int main()
+void recebe ()
 {
 	int cont=0,vet[100], vetimpar[100];
 
@@ -72,7 +71,14 @@ int main()
 	fvetor(vet,&cont);
 	fvetimpar(&cont,&contimpar, vet, vetimpar);
 	printar(&cont, &contimpar, vet, vetimpar);
-	
+
+	return;
+}
+
+int main()
+{
+
+	recebe();
 		
 	system("pause");
 	return 0;

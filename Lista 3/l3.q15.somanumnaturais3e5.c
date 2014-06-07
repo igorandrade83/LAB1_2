@@ -2,19 +2,33 @@
 
 int fsoma(int long *psoma)
 {
-	int mult3=1;
+	int cont=0;
 	
-	for(mult3=1;mult3<1001;mult3++)
-		*psoma = *psoma + (mult3*3) + (mult3*5);		
-		
+	while(cont<1001)
+	{
+		cont+=5;
+		*psoma = *psoma + cont;		
+	}
+	cont=0;
+	while(cont<1001)
+	{
+		cont+=3;
+		*psoma = *psoma + cont;		
+	}	
 	return *psoma;	
+}
+
+void recebe ()
+{
+	int long soma=0;
+	printf("%d\n", fsoma(&soma));
+
+	return;
 }
 
 int main()
 {
-	int long soma=0;
-	
-	printf("%d\n", fsoma(&soma));
+	recebe();
 	system("pause");	
 	return 0;
 }

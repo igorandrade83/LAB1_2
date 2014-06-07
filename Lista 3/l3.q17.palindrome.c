@@ -43,7 +43,7 @@ void multiplica ()
 			{
 				if(verifica_num(result,&cont) == 1)
 				{
-				printf("%d\n",result);
+//				printf("%d\n",result);
 
 					num1 = i;
 					num2 = j;
@@ -54,7 +54,7 @@ void multiplica ()
 		}
 	}
 
-	printf("cont = %d || Maior palindrome com multiplicacao de 3 digitos: %d * %d = %d\n",cont,num1,num2,palind);
+	printf("Maior palindrome com multiplicacao de 3 digitos: %d * %d = %d | cont = %d\n",num1,num2,palind,cont);
 	return;
 
 }

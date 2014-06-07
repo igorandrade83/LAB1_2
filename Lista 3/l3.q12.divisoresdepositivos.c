@@ -16,11 +16,18 @@ void divisor(int *i, int *num)
 	printf("\n");
 }
 
+void recebe ()
+{
+
+	int num,i;
+	divisor(&i, &num);
+	
+	return;
+}
+
 int main()
 {
-    int num,i;
-
-    divisor(&i, &num);
+	recebe();
     
     system("pause");
     return 0;

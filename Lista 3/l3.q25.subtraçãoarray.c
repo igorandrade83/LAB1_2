@@ -26,8 +26,7 @@ void preenchevetor(int *pvet)
 	return;
 }
 
-
-int main()
+void recebe ()
 {
 	int A[tam],B[tam];
 	
@@ -37,7 +36,14 @@ int main()
 	preenchevetor(B);
 	calc(A,B);
 
-	
+	return;
+}
+
+int main()
+{
+
+
+	recebe();
 	system("pause");
 	return 0;
 
