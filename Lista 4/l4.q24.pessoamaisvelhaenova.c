@@ -8,7 +8,7 @@ void copia_nome(char *nome, char *aux)
 {
 	int i=0;
 	
-	while(aux[i] != ' ') // VERIFICAR FINAL ' '
+	while(aux[i] != '\0') // VERIFICAR FINAL ' '
 	{
 		nome[i] = aux[i];
 		i++;
