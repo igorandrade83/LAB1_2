@@ -125,7 +125,6 @@ void AbrirArquivo(struct prod *Lista, FILE *arquivo )
 		corre = Lista->prox;
 	}
 	fclose(arquivo);
-	system("pause");
 	return;
 }
 
